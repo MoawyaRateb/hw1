@@ -23,6 +23,11 @@ class RenderWidget : public QWidget
     QSize sizeHint() const override;
 
 	  void myDrawLine(float x1, float y1, float x2, float y2);
+      void drawline(int x0, int y0, int x1, int y1);
+      void drawline2(int x0, int y0, int x1, int y1);
+      void Coordinates(int xc, int yc, double z1, double z2, double r);
+      void bhm_line(int x1, int y1, int x2, int y2);
+         void  Coordinates1(double r, double z);
 
   protected:
     void paintEvent(QPaintEvent *event) override;
